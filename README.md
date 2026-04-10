@@ -1,4 +1,4 @@
-# 🛠️ Portfolio Architecture & Build Documentation
+# 🛠️ Portfolio
 
 This repository contains the source code for a high-performance, responsive portfolio application. Below is a technical breakdown of how the site is constructed, the libraries used, and the deployment architecture.
 
@@ -57,5 +57,6 @@ The application is built as a **Single Page Application (SPA)** using **React.js
 
 <div align="center">
   <p><b>Technical Implementation by Bhumika Deshmukh</b></p>
+  <p>C:\Users\deshm\Desktop\full_stack\portfolio\Portfolio</p>
   <p>© 2026</p>
 </div>
