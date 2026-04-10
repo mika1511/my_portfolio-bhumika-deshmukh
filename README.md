@@ -1,52 +1,61 @@
-# 🚀 Bhumika Deshmukh | Portfolio
+# 🛠️ Portfolio Architecture & Build Documentation
 
-Welcome to my personal portfolio! This project showcases my journey as a Software Engineer, featuring my technical skill set, professional projects, and core development values.
-
----
-
-## 🌟 Features
-
-- **Dynamic UI**: interactive elements with smooth animations and layout consistency.
-- **Backend Focused Techstack**: Showcasing expertise in Microservices, Spring Boot, Node.js, and Redis.
-- **GitHub Integration**: Real-time contribution tracking using the `react-github-calendar` component.
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing.
-- **Resume Viewer**: Integrated PDF viewer for seamless professional review.
-- **Automated CI/CD**: Seamless deployment pipeline via Vercel.
+This repository contains the source code for a high-performance, responsive portfolio application. Below is a technical breakdown of how the site is constructed, the libraries used, and the deployment architecture.
 
 ---
 
-## 🚀 Getting Started
+## 🏗️ Core Architecture
 
-To run this project locally:
+The application is built as a **Single Page Application (SPA)** using **React.js**.
 
-1.  **Clone the Repo**
-    ```bash
-    git clone https://github.com/mika1511/my_portfolio-bhumika-deshmukh.git
-    ```
-2.  **Install Dependencies**
-    ```bash
-    cd Portfolio
-    npm install
-    ```
-3.  **Start Development Server**
-    ```bash
-    npm start
-    ```
+- **Functional Components**: The entire UI is built using React Functional Components to ensure modularity and high performance.
+- **State Management**: Uses React Hooks (`useState` and `useEffect`) for managing UI states such as the preloader, mobile navigation toggles, and dynamic window resizing for the PDF viewer.
+- **Client-Side Routing**: Handled by `react-router-dom`, enabling seamless navigation between sections without page refreshes.
 
 ---
 
-## 🌐 Deployment
+## 🎨 Frontend & Styling
 
-This portfolio is automatically deployed using **Vercel**. Every push to the `main` branch triggers a new build and deployment.
-
----
-
-## 🤝 Credits
-
-This portfolio is a personalized version of the template originally created by [Soumyajit Behera](https://github.com/soumyajit4419/Portfolio). 
+- **React-Bootstrap**: Utilized as the primary layout engine, providing a responsive 12-column grid system and accessible UI components (Navbar, Container, Row, Col).
+- **Vanilla CSS**: Custom CSS modules are used for:
+  - **Glassmorphism**: Implementing semi-transparent, blurred backgrounds for the Navigation bar.
+  - **Neon Aesthetics**: Custom box-shadows and color transitions for high-contrast visibility.
+  - **Responsive Scaling**: Custom media queries for fine-tuning the UI across varying screen densities.
 
 ---
 
-<p align="center">
-  Developed with ❤️ by Bhumika Deshmukh
-</p>
+## 🧩 Specialized Libraries & Logic
+
+| Library | Purpose | Implementation Detail |
+| :--- | :--- | :--- |
+| **`tsparticles`** | Interactive Background | Uses a canvas-based engine to render a dynamic particle network that interacts with mouse hovering. |
+| **`typewriter-effect`** | Dynamic Intro Text | A purely logic-driven typing animation for the home page header. |
+| **`react-pdf`** | Integrated PDF Engine | Uses a dedicated PDF.js worker imported via CDN to render high-fidelity, interactive resumes within the React lifecycle. |
+| **`react-github-calendar`** | API Integration | Fetches and renders a visual representation of GitHub contribution data via the GitHub API. |
+| **`react-parallax-tilt`** | 3D UI Interaction | Implements a mathematical tilt effect based on mouse coordinates for project cards. |
+
+---
+
+## ⚙️ Build & Optimization
+
+- **React-Scripts**: The project uses `react-scripts` for the build pipeline, which handles:
+  - **Babel**: Transpiling modern JavaScript (ES6+) for cross-browser compatibility.
+  - **Webpack**: Minifying JS/CSS and bundling assets (images, SVGs, PDFs) into the build folder.
+- **Asset Optimization**: High-resolution PNGs and SVGs are processed through the Webpack file-loader to ensure efficient caching and performance.
+- **Routing Tweaks**: A `vercel.json` file is configured with `rewrites` to ensure that all request paths point to `index.html`, preventing 404 errors on refreshes of deep routes like `/about`.
+
+---
+
+## ☁️ Deployment Pipeline
+
+- **Host**: Vercel (Optimized for React SPAs).
+- **CI/CD**: Fully integrated with GitHub.
+  - **Pipeline**: `Push to Main` -> `ESLint Verification` -> `npm build` -> `CDN Deployment`.
+- **Environment**: Node.js 18.x production environment.
+
+---
+
+<div align="center">
+  <p><b>Technical Implementation by Bhumika Deshmukh</b></p>
+  <p>© 2026</p>
+</div>
