@@ -8,37 +8,51 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi everyone! I’m <span className="purple">Soumyajit Behera</span>{" "}
-            from <span className="purple">Bhubaneswar, India</span>.
-            <br />
-            I’m currently working as a{" "}
-            <span className="purple">Software Developer</span> at{" "}
-            <span className="purple">Juspay</span>.
-            <br />I hold an Integrated M.Sc. (IMSc) in{" "}
-            <span className="purple">Mathematics and Computing</span> from{" "}
-            <span className="purple">BIT Mesra</span>.
+            Hi everyone! I’m{" "}
+            <span className="purple">Bhumika Deshmukh</span> from{" "}
+            <span className="purple">Bhilai</span>.
             <br />
             <br />
-            Outside of coding, I love engaging in activities that keep me
-            creative and inspired:
+            I’m a{" "}
+            <span className="purple"> Software Engineering Enthusiast</span>{" "}
+            who enjoys building scalable systems and real-world applications.
+            My work revolves around designing{" "}
+            <span className="purple">APIs, microservices, and distributed systems</span>{" "}
+            with a strong focus on performance and clean architecture.
+            <br />
+            <br />
+            I’ve worked extensively with{" "}
+            <span className="purple">Node.js, TypeScript, Java, and Spring Boot</span>,{" "}
+            and have built projects involving{" "}
+            <span className="purple">
+              real-time systems, asynchronous processing, and AI-powered features
+            </span>.
+            <br />
+            <br />
+            Recently, I’ve been exploring{" "}
+            <span className="purple">LLM integrations and event-driven architectures</span>{" "}
+            — building systems that combine backend engineering with intelligent automation.
+            <br />
+            <br />
+            Outside of coding, I enjoy activities that keep me energized and creative:
           </p>
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games 🎮
+              <ImPointRight /> Traveling and exploring new places 🌍
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs ✍️
+              <ImPointRight /> Learning and building new tech projects 🚀
             </li>
             <li className="about-activity">
-              <ImPointRight /> Traveling and Exploring New Places 🌍
+              <ImPointRight /> Engaging with developer communities 👩‍💻
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "I enjoy building systems that are not just functional, but impactful."
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Bhumika</footer>
         </blockquote>
       </Card.Body>
     </Card>

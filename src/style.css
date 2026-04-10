@@ -159,10 +159,22 @@ button:focus {
   color: rgb(250, 250, 250) !important;
 }
 
-.logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+.res-logo {
+  font-weight: 800 !important;
+  font-size: 1.8em !important;
+  letter-spacing: 2px !important;
+  background: linear-gradient(to right, #cd5ff8, #700c86);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out !important;
 }
+
+.res-logo:hover {
+  transform: scale(1.1) !important;
+  cursor: pointer;
+}
+
+
 
 .navbar-nav .nav-link {
   color: white !important;

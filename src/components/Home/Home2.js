@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
 
 function Home2() {
@@ -13,38 +13,40 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              I’m a Backend-focused Software Engineer who enjoys building scalable systems,
+              microservices, and real-time applications. I like turning complex problems
+              into clean, efficient architectures that are reliable in production.
               <br />
               <br />
               I’m proficient in
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  JavaScript, TypeScript, Java, and SQL{" "}
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
+              — with hands-on experience across MERN stack and Java Spring Boot ecosystems.
               <br />
               <br />
-              My key areas of interest include developing
+              My key areas of interest include designing
               <i>
                 <b className="purple">
                   {" "}
-                  Web Applications, Blockchain Solutions,{" "}
+                  Microservices, Event-Driven Systems, and REST APIs{" "}
                 </b>
               </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              — along with building scalable backend workflows using asynchronous processing and real-time communication.
               <br />
               <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
+              I enjoy working with
+              <b className="purple"> Node.js </b>,{" "}
+              <b className="purple"> Spring Boot </b>,{" "}
+              <b className="purple"> Redis </b>, and{" "}
+              <b className="purple"> WebSockets </b>, while also exploring
               <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
+                <b className="purple"> AI-powered features and LLM integrations</b>
               </i>
+              to build smarter applications.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
