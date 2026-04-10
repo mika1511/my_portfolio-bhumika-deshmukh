@@ -43,6 +43,7 @@ The application is built as a **Single Page Application (SPA)** using **React.js
   - **Webpack**: Minifying JS/CSS and bundling assets (images, SVGs, PDFs) into the build folder.
 - **Asset Optimization**: High-resolution PNGs and SVGs are processed through the Webpack file-loader to ensure efficient caching and performance.
 - **Routing Tweaks**: A `vercel.json` file is configured with `rewrites` to ensure that all request paths point to `index.html`, preventing 404 errors on refreshes of deep routes like `/about`.
+-  <p>C:\Users\deshm\Desktop\full_stack\portfolio\Portfolio</p>
 
 ---
 
@@ -57,6 +58,6 @@ The application is built as a **Single Page Application (SPA)** using **React.js
 
 <div align="center">
   <p><b>Technical Implementation by Bhumika Deshmukh</b></p>
-  <p>C:\Users\deshm\Desktop\full_stack\portfolio\Portfolio</p>
+ 
   <p>© 2026</p>
 </div>
